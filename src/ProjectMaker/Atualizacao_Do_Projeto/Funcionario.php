@@ -1,5 +1,5 @@
 <?php
-namespace project_maker\Atualizacao_Do_Projeto;
+namespace ProjectMaker\Atualizacao_Do_Projeto;
 
 class Funcionario{
 public $clicarEmProjetosPendentes;
