@@ -8,15 +8,16 @@ use PHPUnit\Framework\Attributes\CoversClass;
 class TestInterpretador extends TestCase
 {
 
-    public function testCraicaoDeObjetos()
+    public function testCriacaoDeObjetos()
     {
         $interpretador= new Interpretador();
         $this->assertInstanceOf(Interpretador::class,$interpretador);
         $interpretador->receberDados = TRUE;
         $interpretador->interpretarDados = TRUE;
-        $this->assertEquals(TRUE, $interpretador->receberDados);
-        $this->assertEquals(TRUE, $interpretador->interpretarDados);
+        $this->assertTrue($interpretador->receberDados);
+        $this->assertTrue($interpretador->interpretarDados);
     }
+
 
 
 
