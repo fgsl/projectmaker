@@ -8,7 +8,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 class TestInformacoes_Do_Projeto extends TestCase
 {
 
-    public function testCraicaoDeObjetos()
+    public function testCriacaoDeObjetos()
     {
         $gestor = new Gestor();
         $this->assertInstanceOf(Gestor::class,$gestor);
@@ -21,6 +21,7 @@ class TestInformacoes_Do_Projeto extends TestCase
         $this->assertEquals("Remoto", $gestor->colocarTipoDoProjeto);
         $this->assertTrue($gestor->autorizarAFinalizacaoDoProjeto);
     }
+
 
 
 
