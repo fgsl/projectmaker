@@ -9,7 +9,7 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
  public function testCraicaoDeObjetos(){
     $funcionario = new Funcionario();
-    $this->assertInstanceOf(Funcionario::class==$funcionario);
+    $this->assertInstanceOf(Funcionario::class,$funcionario);
     $funcionario->clicarEmProjetosPendentes=TRUE;
      $funcionario->realizarOProjeto=TRUE;
       $funcionario->clicarEmFinalizarProjeto=FALSE;
@@ -24,3 +24,4 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
 
 }
+
