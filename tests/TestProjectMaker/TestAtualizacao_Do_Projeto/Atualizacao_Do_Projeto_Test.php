@@ -1,11 +1,11 @@
 <?php
-namespace TestProjectMaker\Atualizacao_do_Projeto_Test;
+namespace TestProjectMaker\TestAtualizacao_Do_Projeto;
 use PHPUnit\Framework\TestCase;
 use ProjectMaker\Atualizacao_Do_Projeto\Funcionario;
 use PHPUnit\Framework\Attributes\CoversClass;
 #[CoversClass(Funcionario::class)]
 
-class TestAtualizacao_do_Projeto extends TestCase{
+class Atualizacao_do_Projeto_Test extends TestCase{
 
  public function testCriacaoDeObjetos(){
     $funcionario = new Funcionario();
@@ -24,6 +24,7 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
 
 }
+
 
 
 
