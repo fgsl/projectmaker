@@ -12,7 +12,7 @@ class TestAtualizacao_do_Projeto extends TestCase{
     $this->assertInstanceOf(Funcionario::class,$funcionario);
     $funcionario->clicarEmProjetosPendentes=TRUE;
      $funcionario->realizarOProjeto=TRUE;
-      $funcionario->clicarEmFinalizarProjeto=FALSE;
+      $funcionario->clicarEmFinalizarProjeto=TRUE;
       $this->assertTrue($funcionario->clicarEmProjetosPendentes);
        $this->assertTrue($funcionario->realizarOProjeto);
        $this->assertTrue($funcionario->clicarEmFinalizarProjeto);
@@ -24,6 +24,7 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
 
 }
+
 
 
 
