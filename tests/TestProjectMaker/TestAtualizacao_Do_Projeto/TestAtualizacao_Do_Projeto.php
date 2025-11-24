@@ -13,9 +13,9 @@ class TestAtualizacao_do_Projeto extends TestCase{
     $funcionario->clicarEmProjetosPendentes=TRUE;
      $funcionario->realizarOProjeto=TRUE;
       $funcionario->clicarEmFinalizarProjeto=FALSE;
-      $this->assertEquals(TRUE,$funcionario->clicarEmProjetosPendentes);
-       $this->assertEquals(TRUE,$funcionario->realizarOProjeto);
-       $this->assertEquals(FALSE,$funcionario->clicarEmFinalizarProjeto);
+      $this->assertTrue($funcionario->clicarEmProjetosPendentes);
+       $this->assertTrue($funcionario->realizarOProjeto);
+       $this->assertFalse($funcionario->clicarEmFinalizarProjeto);
  }
 
 
@@ -24,4 +24,5 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
 
 }
+
 
