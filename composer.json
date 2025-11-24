@@ -4,8 +4,8 @@
     },
     "autoload":{
         "psr-4": {
-            "ProjectMaker\\":"src/ProjectMaker",
-            "TestProjectMaker\\":"tests/TestProjectMaker"
+            "ProjectMaker\\":"src/ProjectMaker/",
+            "TestProjectMaker\\":"tests/TestProjectMaker/"
         }
     }
 }
