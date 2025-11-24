@@ -7,7 +7,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 
 class TestAtualizacao_do_Projeto extends TestCase{
 
- public function testCraicaoDeObjetos(){
+ public function testCriacaoDeObjetos(){
     $funcionario = new Funcionario();
     $this->assertInstanceOf(Funcionario::class,$funcionario);
     $funcionario->clicarEmProjetosPendentes=TRUE;
@@ -24,6 +24,7 @@ class TestAtualizacao_do_Projeto extends TestCase{
 
 
 }
+
 
 
 
