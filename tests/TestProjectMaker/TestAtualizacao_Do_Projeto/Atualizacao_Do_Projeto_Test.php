@@ -3,7 +3,7 @@ namespace TestProjectMaker\TestAtualizacao_Do_Projeto;
 use PHPUnit\Framework\TestCase;
 use ProjectMaker\Atualizacao_Do_Projeto\Funcionario;
 use PHPUnit\Framework\Attributes\CoversClass;
-#[CoversClass(Funcionario:class)]
+#[CoversClass(Funcionario::class)]
 
 class Atualizacao_do_Projeto_Test extends TestCase{
 
@@ -24,6 +24,7 @@ class Atualizacao_do_Projeto_Test extends TestCase{
 
 
 }
+
 
 
 
