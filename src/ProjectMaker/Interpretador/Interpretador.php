@@ -1,5 +1,5 @@
 <?php
-namespace project_maker\Interpretador;
+namespace ProjectMaker\Interpretador;
 class Interpretador {
 public $receberDados;
 public $interpretarDados;
