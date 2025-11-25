@@ -5,7 +5,7 @@ use ProjectMaker\Interface\Usuario;
 use PHPUnit\Framework\Attributes\CoversClass;
 #[CoversClass(Usuario::class)]
 
-class TestInterface extends TestCase
+class InterfaceTest extends TestCase
 {
     public function testCriacaoDeObjetos()
     {
