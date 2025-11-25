@@ -16,6 +16,8 @@ class InterpretadorTest extends TestCase
         $interpretador->interpretarDados = TRUE;
         $this->assertTrue($interpretador->receberDados);
         $this->assertTrue($interpretador->interpretarDados);
+        $interpretador->receberDados = FALSE;
+        $this->assertFalse($interpretador->receberDados);
     }
 
 
@@ -25,4 +27,5 @@ class InterpretadorTest extends TestCase
 
 
 }
+
 
