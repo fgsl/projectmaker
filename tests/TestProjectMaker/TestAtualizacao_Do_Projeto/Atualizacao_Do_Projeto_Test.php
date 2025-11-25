@@ -8,6 +8,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 class Atualizacao_do_Projeto_Test extends TestCase{
 
  public function testCriacaoDeObjetos(){
+    $caminho=_DIR_.'/Atualizacao_Do_Projeto_test.php';
     $funcionario = new Funcionario();
     $this->assertInstanceOf(Funcionario::class,$funcionario);
     $funcionario->clicarEmProjetosPendentes=TRUE;
@@ -16,6 +17,7 @@ class Atualizacao_do_Projeto_Test extends TestCase{
       $this->assertTrue($funcionario->clicarEmProjetosPendentes);
        $this->assertTrue($funcionario->realizarOProjeto);
        $this->assertTrue($funcionario->clicarEmFinalizarProjeto);
+        $this->assertTrue(file_exists($caminho), "O arquivo não foi encontrado.");
  }
 
 
@@ -24,6 +26,7 @@ class Atualizacao_do_Projeto_Test extends TestCase{
 
 
 }
+
 
 
 
