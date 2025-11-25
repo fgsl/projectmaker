@@ -5,7 +5,7 @@ use ProjectMaker\Interpretador\Interpretador;
 use PHPUnit\Framework\Attributes\CoversClass;
 #[CoversClass(Interpretador::class)]
 
-class TestInterpretador extends TestCase
+class InterpretadorTest extends TestCase
 {
 
     public function testCriacaoDeObjetos()
@@ -25,3 +25,4 @@ class TestInterpretador extends TestCase
 
 
 }
+
