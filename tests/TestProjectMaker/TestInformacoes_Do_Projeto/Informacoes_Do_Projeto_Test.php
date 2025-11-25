@@ -5,7 +5,7 @@ use ProjectMaker\Informacoes_Do_Projeto\Gestor;
 use PHPUnit\Framework\Attributes\CoversClass;
 #[CoversClass(Gestor::class)]
 
-class TestInformacoes_Do_Projeto extends TestCase
+class Informacoes_Do_Projeto_Test extends TestCase
 {
 
     public function testCriacaoDeObjetos()
@@ -29,4 +29,5 @@ class TestInformacoes_Do_Projeto extends TestCase
 
 
 }
+
 
