@@ -17,5 +17,7 @@ class InterfaceTest extends TestCase
         $this->assertEquals('José', $usuario->nome);
         $this->assertEquals('Gestor', $usuario->funcao);
         $this->assertStringContainsString('com.br', $usuario->email);
+        $usuario->funcao = 'Funcionario';
+        $this->assertEquals('Funcionario', $usuario->funcao);
     }
 }
