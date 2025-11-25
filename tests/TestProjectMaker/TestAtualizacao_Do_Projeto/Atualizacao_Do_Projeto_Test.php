@@ -8,7 +8,7 @@ use PHPUnit\Framework\Attributes\CoversClass;
 class Atualizacao_do_Projeto_Test extends TestCase{
 
  public function testCriacaoDeObjetos(){
-    $caminho=TestAtualização_Do_Projeto.'/Atualizacao_Do_Projeto_test.php';
+    $caminho=.'/Atualizacao_Do_Projeto_test.php';
     $funcionario = new Funcionario();
     $this->assertInstanceOf(Funcionario::class,$funcionario);
     $funcionario->clicarEmProjetosPendentes=TRUE;
@@ -26,6 +26,7 @@ class Atualizacao_do_Projeto_Test extends TestCase{
 
 
 }
+
 
 
 
