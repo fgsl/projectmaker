@@ -20,6 +20,8 @@ class Informacoes_Do_Projeto_Test extends TestCase
         $this->assertEquals("Crie um Banco de Dados para controlar a venda dos produtos", $gestor->especificaoesDoProjeto);
         $this->assertEquals("Remoto", $gestor->colocarTipoDoProjeto);
         $this->assertTrue($gestor->autorizarAFinalizacaoDoProjeto);
+        $gestor->colocarTipoDoProjeto = "Presencial";
+        $this->assertEquals("Presencial", $gestor->colocarTipoDoProjeto);
     }
 
 
@@ -29,5 +31,6 @@ class Informacoes_Do_Projeto_Test extends TestCase
 
 
 }
+
 
 
